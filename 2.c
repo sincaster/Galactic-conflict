@@ -88,13 +88,13 @@ int main(){
 				}
 				for(int i = 0; i < ALLEGRO_KEY_MAX; i++)
 					key[i] &= KEY_SEEN;
-				if (step > 3)
+				if (step > 1)
 					yshot[n]-=10;
 
 				redraw = true;
 				break;
 			case ALLEGRO_EVENT_KEY_DOWN:
-				if((event.keyboard.keycode == ALLEGRO_KEY_SPACE) && step>3)
+				if((event.keyboard.keycode == ALLEGRO_KEY_SPACE) && step>1)
 					shotnum++;
 				if((event.keyboard.keycode == ALLEGRO_KEY_ENTER)){
 					step++;
